@@ -1,7 +1,927 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>testing temporary hosting</p>
-</body>
-</html>
+<!-- saved from url=(0076)https://m0ukd.com/homebrew/antennas/70mhz-quarter-wave-ground-plane-antenna/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="" lang="en-GB"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- BEGIN Metadata added by the Add-Meta-Tags WordPress plugin -->
+<meta name="description" content="I had a dipole up for 4m previously (see here), which worked fine, but was quite ugly on a 1 metre boom arm. I wanted to make something simple that would be reliable and not require a balun or any impedance transforming, so I decided to build a quarter wave ground plane antenna for home.">
+<meta name="keywords" content="70mhz, antenna, quarter wave, ground plane, homebrew, 4m, vhf, 1/4">
+<!-- END Metadata added by the Add-Meta-Tags WordPress plugin -->
+
+
+<meta name="viewport" content="initial-scale=1.0">
+<title>70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://m0ukd.com/xmlrpc.php">
+<link rel="dns-prefetch" href="https://ws.sharethis.com/">
+<link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="M0UKD - Amateur Radio Blog » Feed" href="https://m0ukd.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="M0UKD - Amateur Radio Blog » Comments Feed" href="https://m0ukd.com/comments/feed/">
+<script id="twitter-wjs" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/widgets.js.download"></script><script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/m0ukd.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/style.min.css" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="cookie-law-info-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/cookie-law-info-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="cookie-law-info-gdpr-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/cookie-law-info-gdpr.css" type="text/css" media="all">
+<link rel="stylesheet" id="page-list-style-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/page-list.css" type="text/css" media="all">
+<link rel="stylesheet" id="ce_responsive-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/video-container.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="simple-share-buttons-adder-font-awesome-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="math-captcha-frontend-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="frontier-font-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="genericons-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/genericons.css" type="text/css" media="all">
+<link rel="stylesheet" id="frontier-main-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="frontier-responsive-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="easy_table_style-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/style(1).css" type="text/css" media="all">
+<script type="text/javascript" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script type="text/javascript" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/stt.js.download" id="stt-js"></script>
+<script type="text/javascript" id="cookie-law-info-js-extra">
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#444","border_on":"","button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":"1","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
+var log_object = {"ajax_url":"https:\/\/m0ukd.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/cookie-law-info-public.js.download" id="cookie-law-info-js"></script>
+<script id="st_insights_js" type="text/javascript" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/st_insights.js.download"></script>
+<link rel="https://api.w.org/" href="https://m0ukd.com/wp-json/"><link rel="alternate" type="application/json" href="https://m0ukd.com/wp-json/wp/v2/pages/1287"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://m0ukd.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://m0ukd.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0.2">
+<link rel="canonical" href="https://m0ukd.com/homebrew/antennas/70mhz-quarter-wave-ground-plane-antenna/">
+<link rel="shortlink" href="https://m0ukd.com/?p=1287">
+<link rel="alternate" type="application/json+oembed" href="https://m0ukd.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fm0ukd.com%2Fhomebrew%2Fantennas%2F70mhz-quarter-wave-ground-plane-antenna%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://m0ukd.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fm0ukd.com%2Fhomebrew%2Fantennas%2F70mhz-quarter-wave-ground-plane-antenna%2F&amp;format=xml">
+	
+		<!-- by Scrollto Top -->
+		
+ 		<script type="text/javascript">
+ 			//<![CDATA[
+  			jQuery(document).ready(function(){
+    			jQuery("body").append("<div id=\"scroll_to_top\"><a href=\"#top\">Scroll to Top</a></div>");
+    			jQuery("#scroll_to_top a").css({	'display' : 'none', 'z-index' : '9', 'position' : 'fixed', 'top' : '100%', 'width' : '110px', 'margin-top' : '-30px', 'right' : '50%', 'margin-left' : '-50px', 'height' : '20px', 'padding' : '3px 5px', 'font-size' : '14px', 'text-align' : 'center', 'padding' : '3px', 'color' : '#FFFFFF', 'background-color' : '#222222', '-moz-border-radius' : '5px', '-khtml-border-radius' : '5px', '-webkit-border-radius' : '5px', 'opacity' : '.8', 'text-decoration' : 'none'});	
+    			jQuery('#scroll_to_top a').click(function(){
+					jQuery('html, body').animate({scrollTop:0}, 'slow');
+				});
+
+    		});
+  			
+			//]]>
+
+  		</script>
+		<!-- /by Scrollto Top and History Back -->	
+		
+		
+<meta property="Frontier Theme" content="1.3.3">
+<style type="text/css" media="screen">
+	#container 	{width: 1320px;}
+	#header 	{min-height: 0px;}
+	#content 	{width: 63%;}
+	#sidebar-left 	{width: 16%;}
+	#sidebar-right 	{width: 21%;}
+</style>
+
+<style type="text/css" media="screen">
+	.page-template-page-cs-php #content, .page-template-page-sc-php #content {width: 75%;}
+	.page-template-page-cs-php #sidebar-left, .page-template-page-sc-php #sidebar-left,
+	.page-template-page-cs-php #sidebar-right, .page-template-page-sc-php #sidebar-right {width: 25%;}
+	.page-template-page-scs-php #content {width: 63%;}
+	.page-template-page-scs-php #sidebar-left {width: 16%;}
+	.page-template-page-scs-php #sidebar-right {width: 21%;}
+</style>
+
+<style type="text/css" media="screen">
+	#header {
+		background-image: url('https://m0ukd.com/wp-content/uploads/2015/02/header4.jpg' );
+		background-size: 1320px 140px;
+	}
+</style>
+
+<style type="text/css" media="screen">
+	#header {background-color:#ffffff;}
+	#nav-main {background-color:#600000;}
+	#nav-main .nav-main {border-left: 1px solid #380000; border-right: 1px solid #7e1e1e;}
+	#nav-main .nav-main > li, #nav-main .nav-main > ul > .page_item {border-left: 1px solid #7e1e1e; border-right: 1px solid #380000;}
+	#top-bar {background-color:#222222;}
+	#bottom-bar {background-color:#222222;}
+	#main {background-color:#F5F5F5;}
+	.blog-view, .single-view, .author-info, .archive-info, .form-404 {background-color:#FFFFFF;}
+	.blog-view.sticky {background-color:#FFDC8A;}
+	.frontier-widget {background-color:#FFFFFF;}
+	.blog-view, .comment-author-admin > .comment-body, .bypostauthor > .comment-body {border-top: 6px solid #600000;}
+	.page-nav > *, .comment-nav > *, .author-info .title, .comment-reply-link, .widget-title,
+	.widget_search .search-submit, .widget_calendar caption {background-color:#600000;}
+	.genericon {color:#600000;}
+	a {color:#0000ee;}
+	a:hover {color:#e80000;}
+</style>
+
+<!-- Custom Head Codes -->
+<link href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/css(1)" rel="stylesheet" type="text/css">
+<link href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/css(2)" rel="stylesheet" type="text/css">
+<link href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/css(3)" rel="stylesheet" type="text/css">
+<link href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/css(4)" rel="stylesheet" type="text/css">
+
+<meta property="og:url" content="https://m0ukd.com">
+
+<script src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/f.txt"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9088453687454522",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- Custom Head Codes End -->
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://m0ukd.com/wp-content/themes/frontier/images/honeycomb.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll; }
+</style>
+	
+<!-- Custom CSS -->
+<style type="text/css" media="screen">
+.entry-title {font-size: 200%; font-family: 'Walter Turncoat', sans-serif}
+.blog-view .entry-content {font-size: 125%; font-family: 'Ubuntu', sans-serif;}
+.single-view .entry-content {font-size: 125%; font-family: 'Ubuntu', sans-serif;}
+</style>
+<!-- Custom CSS End -->
+
+<script charset="utf-8" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/horizon_timeline.4836f7a62ef55f5880337b3b6602854f.js.download"></script></head>
+
+<body class="page-template-default page page-id-1287 page-child parent-pageid-719 custom-background">
+	
+	
+<div id="container" class="cf" itemscope="" itemtype="http://schema.org/WebPage">
+	
+	
+			<div id="header" class="cf" itemscope="" itemtype="http://schema.org/WPHeader" role="banner">
+			
+							<div id="header-logo">
+					<a href="https://m0ukd.com/"><img src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/header.png" alt="M0UKD - Amateur Radio Blog"></a>
+				</div>
+			
+			<section id="text-6" class="widget-header frontier-widget widget_text">			<div class="textwidget"><script async="" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/f.txt"></script>
+<!-- Auto White 12/2016 -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9088453687454522" data-ad-slot="1994989496" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</section>
+					</div>
+	
+			
+		<nav id="nav-main" class="cf stack" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation" aria-label="Main menu">
+			
+			
+			<ul id="menu-main" class="nav-main"><li id="menu-item-445" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-445"><a href="https://m0ukd.com/">Home</a>
+<ul class="sub-menu">
+	<li id="menu-item-1060" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1060"><a href="https://m0ukd.com/category/portable/">Portable Operating</a></li>
+	<li id="menu-item-1061" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1061"><a href="https://m0ukd.com/category/contests/">Contests</a></li>
+	<li id="menu-item-1062" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1062"><a href="https://m0ukd.com/category/technical/">Technical</a></li>
+	<li id="menu-item-1063" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1063"><a href="https://m0ukd.com/category/construction/">Construction</a></li>
+	<li id="menu-item-1064" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1064"><a href="https://m0ukd.com/category/satellite-operations/">Satellite Operations</a></li>
+	<li id="menu-item-1065" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1065"><a href="https://m0ukd.com/category/special-events/">Special Events</a></li>
+</ul>
+</li>
+<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="https://m0ukd.com/about-me/">About Me</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current_page_ancestor menu-item-has-children menu-item-25"><a href="https://m0ukd.com/homebrew/">Homebrew</a>
+<ul class="sub-menu">
+	<li id="menu-item-732" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-732"><a href="https://m0ukd.com/homebrew/antennas/">Antennas</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1289" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1287 current_page_item menu-item-1289"><a href="https://m0ukd.com/homebrew/antennas/70mhz-quarter-wave-ground-plane-antenna/" aria-current="page">70MHz Quarter Wave Ground Plane Antenna</a></li>
+		<li id="menu-item-298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-298"><a href="https://m0ukd.com/homebrew/antennas/144mhz-2m-portable-yagi-vhf-beam-antenna/">144MHz 2m Portable Yagi VHF Beam Antenna</a></li>
+		<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="https://m0ukd.com/homebrew/antennas/magnetic-loop-antennas/">Magnetic Loop Antennas</a></li>
+		<li id="menu-item-275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-275"><a href="https://m0ukd.com/homebrew/antennas/homemade-carolina-windom-antenna/">Homemade Carolina Windom antenna</a></li>
+		<li id="menu-item-286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-286"><a href="https://m0ukd.com/homebrew/antennas/homemade-20-metre-band-loft-dipole/">Homemade 20 metre band loft dipole!</a></li>
+	</ul>
+</li>
+	<li id="menu-item-672" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-672"><a href="https://m0ukd.com/homebrew/baluns-and-ununs/">Baluns and UnUns</a>
+	<ul class="sub-menu">
+		<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292"><a href="https://m0ukd.com/homebrew/baluns-and-ununs/end-fed-half-wave-antenna-tuned-coupler-efhw/">End Fed Half Wave Antenna Coupler (EFHW)</a></li>
+		<li id="menu-item-295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-295"><a href="https://m0ukd.com/homebrew/baluns-and-ununs/11-voltage-balun-for-hf-wire-dipoles/">1:1 Voltage Balun for HF wire dipoles</a></li>
+		<li id="menu-item-677" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-677"><a href="https://m0ukd.com/homebrew/baluns-and-ununs/91-magnetic-longwire-balun-unun/">9:1 Magnetic Longwire Balun / Unun</a></li>
+	</ul>
+</li>
+	<li id="menu-item-308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="https://m0ukd.com/homebrew/simple-cw-touch-keyer-circuits/">Simple CW Touch Keyer Circuits</a></li>
+	<li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307"><a href="https://m0ukd.com/homebrew/capacitive-cw-touch-key-circuits/">Capacitive CW Touch Key Circuits</a></li>
+	<li id="menu-item-279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-279"><a href="https://m0ukd.com/homebrew/2n6084-144mhz-fm-power-amplifier/">2N6084 144MHz FM Power Amplifier</a></li>
+	<li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="https://m0ukd.com/homebrew/g3xbm-472khz-transverter/">G3XBM 472kHz Transverter</a></li>
+	<li id="menu-item-289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-289"><a href="https://m0ukd.com/homebrew/rig-to-soundcard-interface/">Rig to Soundcard Interface</a></li>
+	<li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="https://m0ukd.com/homebrew/pic-controlled-500w-modified-sine-wave-inverter/">PIC controlled 500w ‘Modified Sine Wave’ Inverter</a></li>
+	<li id="menu-item-457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-457"><a href="https://m0ukd.com/homebrew/alkaline-battery-charging-circuit/">Alkaline battery charging circuit</a></li>
+</ul>
+</li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-83"><a href="https://m0ukd.com/calculators/">Calculators</a>
+<ul class="sub-menu">
+	<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="https://m0ukd.com/calculators/slim-jim-and-j-pole-calculator/">Slim Jim and J Pole calculator</a></li>
+	<li id="menu-item-1193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1193"><a href="https://m0ukd.com/calculators/quarter-wave-ground-plane-antenna-calculator/">1/4 Wave Ground Plane Antenna Calculator</a></li>
+	<li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="https://m0ukd.com/calculators/ohms-law-calculator/">Ohms Law Calculator</a></li>
+	<li id="menu-item-254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-254"><a href="https://m0ukd.com/calculators/dbm-dbw-uw-mw-watt-kw-mw-calculator/">dBm, dBW, µW, mW, Watt, KW and MW Calculator</a></li>
+	<li id="menu-item-319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-319"><a href="https://m0ukd.com/calculators/loaded-quarter-wave-antenna-inductance-calculator/">Loaded Quarter Wave Antenna Inductance Calculator</a></li>
+	<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="https://m0ukd.com/calculators/erp-eirp-calculator/">ERP &amp; EIRP Calculator</a></li>
+	<li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="https://m0ukd.com/calculators/resonant-frequency-calculator-inductance-capacitance-lc-circuit/">Resonant Frequency Calculator</a></li>
+	<li id="menu-item-156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-156"><a href="https://m0ukd.com/calculators/pi-attenuator-calculator/">PI attenuator calculator</a></li>
+	<li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://m0ukd.com/calculators/t-attenuator-calculator/">T attenuator calculator</a></li>
+	<li id="menu-item-194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="https://m0ukd.com/calculators/air-cored-inductor-calculator/">Air Cored Inductor Calculator</a></li>
+	<li id="menu-item-204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-204"><a href="https://m0ukd.com/calculators/inverted-vee-antenna/">Inverted Vee Antenna</a></li>
+	<li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223"><a href="https://m0ukd.com/calculators/parallel-resistor-inductor-or-series-capacitor-calculator/">Parallel Resistor, Inductor or series capacitor calculator</a></li>
+	<li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="https://m0ukd.com/calculators/electricity-cost-calculator-kwh/">Electricity cost calculator kW/h</a></li>
+</ul>
+</li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-46"><a href="https://m0ukd.com/mods/">Mods</a>
+<ul class="sub-menu">
+	<li id="menu-item-441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-441"><a href="https://m0ukd.com/mods/yaesu-mh-31-electret-condenser-mic-modification/">Yaesu MH-31 Electret Condenser Mic Modification</a></li>
+	<li id="menu-item-442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442"><a href="https://m0ukd.com/mods/mfj-971-portable-antenna-tuner-modifications/">MFJ-971 Portable Antenna Tuner Modifications</a></li>
+	<li id="menu-item-1145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1145"><a href="https://m0ukd.com/mods/icom-ic-7200-so239-to-ntype-socket/">Icom IC-7200 SO-239 to N-Type Socket</a></li>
+</ul>
+</li>
+<li id="menu-item-1093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1093"><a href="https://m0ukd.com/reviews/">Reviews</a>
+<ul class="sub-menu">
+	<li id="menu-item-1094" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1094"><a href="https://m0ukd.com/reviews/manson-sps-9400-40a-switchmode-power-supply/">Manson SPS-9400 40A 3-15V Switchmode Power Supply</a></li>
+</ul>
+</li>
+<li id="menu-item-490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-490"><a href="https://m0ukd.com/other-stuff/">Other Stuff</a>
+<ul class="sub-menu">
+	<li id="menu-item-491" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-491"><a href="https://m0ukd.com/other-stuff/printable-amateur-radio-logbooks/">Printable Amateur Radio Logbooks</a></li>
+	<li id="menu-item-502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-502"><a href="https://m0ukd.com/other-stuff/useful-information-on-lead-acid-batteries/">Useful information on Lead Acid Batteries</a></li>
+	<li id="menu-item-983" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-983"><a href="https://m0ukd.com/other-stuff/web-server-network-usage/">Web Server Network Usage</a></li>
+	<li id="menu-item-996" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-996"><a href="https://server.john-p.net/phpsysinfo/">Server Info</a></li>
+</ul>
+</li>
+<li id="menu-item-405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-405"><a href="https://m0ukd.com/logbook/">My Logbook</a></li>
+<li id="menu-item-401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-401"><a href="https://m0ukd.com/contact-me/">Contact Me</a></li>
+</ul>
+					</nav>
+	
+	
+<div id="main" class="col-scs cf">
+
+<div id="content" class="cf" role="main">
+
+			<div id="widgets-wrap-before-content" class="cf"><section id="text-8" class="widget-before-content frontier-widget widget_text">			<div class="textwidget"><div style="text-align: center;"><script async="" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/f.txt"></script>
+<!-- 728 x 15 2016 Text Only Dark -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:15px" data-ad-client="ca-pub-9088453687454522" data-ad-slot="3471722692"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div>
+		</section></div>
+	
+	
+	
+	
+					
+<article id="post-1287" class="single-view post-1287 page type-page status-publish hentry">
+
+
+<header class="entry-header cf">
+		<h1 class="entry-title" itemprop="headline"><a href="https://m0ukd.com/homebrew/antennas/70mhz-quarter-wave-ground-plane-antenna/">70MHz Quarter Wave Ground Plane Antenna</a></h1>
+	</header>
+
+<div class="entry-byline cf">
+	
+	
+	
+	
+	
+	
+	</div>
+
+<div class="entry-content cf" itemprop="text">
+	
+	
+	<p>I had a dipole up for 4m previously (<strong><a href="https://m0ukd.com/2014/09/half-wave-dipole-antenna-for-70mhz-4m/">see here</a></strong>), which worked fine, but was quite ugly on a 1 metre boom arm. I wanted to make something simple that would be reliable and not require a balun or any impedance transforming, so I decided to build a quarter wave ground plane antenna for home. The quarter wave is a good reliable antenna, and SWR is very robust and not affected by rain or snow etc. It can be built with very predictable results, even near trees or buildings, due to it’s low feed impedance.</p>
+<p>They are easy to build, especially for the UHF bands as you can simply use a SO-239 or N-Type chassis mount. For VHF and below however, they require some more heavy duty construction. The trickiest part of course is mounting the driven element, whilst being insulated from the main mount.</p>
+<p>I made a <a href="https://m0ukd.com/calculators/quarter-wave-ground-plane-antenna-calculator/"><strong>calculator that can be found here</strong></a> for working out the required lengths for the driven element and the radials. The final dimensions are <strong>100.5cm</strong> for the driven element and <strong>112.5cm</strong> for the radials (Velocity factor ended up 0.943 and centre frequency was 70.4MHz). The radial length is measured from the bottom of the driven element, so actual rod length is slightly shorter.</p>
+<p>Construction started with a flat piece of aluminium sheet, which was cut slightly larger than the ‘U’ bolt that I was going to use, then bent into a right angle shape. This wasn’t easy, a blowtorch, vice and hammer was needed! The ‘U’ bolt and SO-239 chassis mount were then drilled and mounted.</p>
+<div style="width: 1610px" class="wp-caption aligncenter"><a href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_1.jpg"><img class="size-medium" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_1.jpg" alt="The main mounting structure." width="1600" height="1029"></a><p class="wp-caption-text">The main mounting structure.</p></div>
+<p>The problem now was how to mount the radiating element rigidly, whilst being insulated from the main structure. I decided to use a chopping board (inspired by <strong><a href="https://www.george-smart.co.uk/">George M1GEO</a></strong>) for this task. So, taking the same width as the aluminium plate, a piece of chopping board was marked and cut to shape.</p>
+<div style="width: 1010px" class="wp-caption aligncenter"><a href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_2.jpg"><img loading="lazy" class="size-medium" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_2.jpg" alt="Making the insulated mount for the driven element." width="1000" height="750"></a><p class="wp-caption-text">Making the insulated mount for the driven element.</p></div>
+<p>Then, I cut two pieces of angled aluminium to mount the plastic to the base. These were mounted using 5mm rivets, then the driven element was mounted to the plastic and connected to the SO-239 chassis mount.</p>
+<div style="width: 1610px" class="wp-caption aligncenter"><a href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_3.jpg"><img loading="lazy" class="size-medium" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_3.jpg" alt="The mounted driven element." width="1600" height="1200"></a><p class="wp-caption-text">The mounted driven element.</p></div>
+<div style="width: 1410px" class="wp-caption aligncenter"><a href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_4.jpg"><img loading="lazy" class="size-medium" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_4.jpg" alt="The 5mm rivets used to mount the driven element insulator and the feedpoint connector." width="1400" height="1050"></a><p class="wp-caption-text">The 5mm rivets used to mount the driven element insulator and the feedpoint connector.</p></div>
+<p>Next, I had to cut the four radials.</p>
+<div style="width: 1410px" class="wp-caption aligncenter"><a href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_5.jpg"><img loading="lazy" class="size-medium" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_5.jpg" alt="The four radials, bent at 45° cut and ready for mounting." width="1400" height="688"></a><p class="wp-caption-text">The four radials, bent at 135° cut and ready for mounting.</p></div>
+<p>The radials were then drilled and bolted on, then the antenna was ready for testing.</p>
+<div style="width: 1410px" class="wp-caption aligncenter"><a href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_6.jpg"><img loading="lazy" class="size-medium" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_6.jpg" alt="The finished antenna, ready for testing." width="1400" height="1050"></a><p class="wp-caption-text">The finished antenna, ready for testing.</p></div>
+<p>The antenna was then raised above ground for some initial testing.</p>
+<div style="width: 610px" class="wp-caption aligncenter"><a href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_7.jpg"><img loading="lazy" class="size-medium" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_7.jpg" alt="The antenna being tested in the garden." width="600" height="800"></a><p class="wp-caption-text">The antenna being tested in the garden.</p></div>
+<p>SWR was good straight from the <strong><a href="https://m0ukd.com/calculators/quarter-wave-ground-plane-antenna-calculator/">calculator</a></strong>, about 1.2:1 going to 1:1 at about 69MHz, so about 0.5cm was cut from the driven element and 1cm from all radials. This resulted in perfect resonance at 70.45MHz and a perfect match to 50Ω coaxial cable. Reverse engineering showed it to have a velocity factor of 94.3% (0.943 in the calculator).</p>
+<div style="width: 760px" class="wp-caption aligncenter"><a href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_8.jpg"><img loading="lazy" class="size-medium" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_8.jpg" alt="The perfect match and resonance on the MFJ-259C." width="750" height="1000"></a><p class="wp-caption-text">The perfect match and resonance on the MFJ-259C.</p></div>
+<p>The antenna was then sealed with silicon where required and raised up in the air in it’s permanent position. SWR stayed good when tested in its final position.</p>
+<div style="width: 1410px" class="wp-caption aligncenter"><a href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_9.jpg"><img loading="lazy" class="size-medium" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/70MHz_Quarter_Wave_Antenna_Construction_9.jpg" alt="The 70MHz quarter wave ground plane antenna in it&#39;s final position." width="1400" height="937"></a><p class="wp-caption-text">The 70MHz quarter wave ground plane antenna in it’s final position.</p></div>
+<p>It’s good to be back on the 4m band. The antenna performs well and was fun to construct. It should give many years of service!</p>
+<p>Good luck if you decide to build one and I hope to hear you on 70MHz <img draggable="false" role="img" class="emoji" alt="🙂" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/1f642.svg"></p>
+<!-- Simple Share Buttons Adder (8.2.6) simplesharebuttons.com --><div class="ssba-classic-2 ssba ssbp-wrap left ssbp--theme-1"><div style="text-align:left"><span class="ssba-share-text">Share this...</span><a data-site="" class="ssba_twitter_share" href="http://twitter.com/share?url=https://m0ukd.com/homebrew/antennas/70mhz-quarter-wave-ground-plane-antenna/&amp;text=70MHz%20Quarter%20Wave%20Ground%20Plane%20Antenna%20%40m0ukd%20%23hamr" target="&quot;_blank&quot;"><img src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/twitter.png" style="width: 35px;" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter"><div title="Twitter" class="ssbp-text">Twitter</div></a><a data-site="" class="ssba_facebook_share" href="http://www.facebook.com/sharer.php?u=https://m0ukd.com/homebrew/antennas/70mhz-quarter-wave-ground-plane-antenna/" target="_blank"><img src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/facebook.png" style="width: 35px;" title="Facebook" class="ssba ssba-img" alt="Share on Facebook"><div title="Facebook" class="ssbp-text">Facebook</div></a><span class=" ssba_sharecount">0</span><a data-site="email" class="ssba_email_share" href="mailto:?subject=70MHz%20Quarter%20Wave%20Ground%20Plane%20Antenna&amp;body=%20https://m0ukd.com/homebrew/antennas/70mhz-quarter-wave-ground-plane-antenna/"><img src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/email.png" style="width: 35px;" title="Email" class="ssba ssba-img" alt="Email this to someone"><div title="email" class="ssbp-text">email</div></a></div></div>
+	
+	
+	
+	</div>
+
+<footer class="entry-footer cf">
+	
+	
+	
+	</footer>
+
+
+</article>
+
+
+
+			<div id="comment-area">
+<div id="comments">
+	
+	</div></div>
+			
+	
+	
+	
+			<div id="widgets-wrap-after-content" class="cf"><section id="text-7" class="widget-after-content frontier-widget widget_text">			<div class="textwidget"><script async="" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/f.txt"></script>
+<!-- Auto White 12/2016 -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9088453687454522" data-ad-slot="1994989496" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</section></div>
+	
+</div>
+
+<div id="sidebar-left" class="sidebar cf" itemscope="" itemtype="http://schema.org/WPSideBar" role="complementary" aria-label="Sidebar Left">
+		<aside id="widgets-wrap-sidebar-left">
+
+					
+		<section id="recent-posts-2" class="widget-sidebar frontier-widget widget_recent_entries">
+		<h2 class="widget-title">Recent Posts</h2>
+		<ul>
+											<li>
+					<a href="https://m0ukd.com/2017/08/international-space-station-na1iss-contact-with-gb4yota/">International Space Station NA1ISS contact with GB4YOTA</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2017/08/building-a-70mhz-quarter-wave-ground-plane/">Building a 70MHz quarter wave ground plane</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2017/07/receiving-sstv-images-from-the-iss-ariss-20th-anniversary/">Receiving SSTV images from the ISS – ARISS 20th Anniversary</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2017/06/14-wave-antenna-calculator/">1/4 Wave Antenna Calculator</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2017/03/a-long-break/">A long break…</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2016/03/my-first-23cm-1297mhz-contact/">My first 23cm 1297MHz contact!</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2015/11/icom-ic-7100-so-239-to-n-type/">Icom IC-7100 SO-239 to N-Type</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2015/10/reviews/">Reviews</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2015/10/rsgb-21mhz-28mhz-contest/">RSGB 21/28MHz Contest</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2015/09/practical-wireless-70mhz-contest/">Practical Wireless 70MHz Contest</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2015/09/rsgb-2nd-70mhz-contest/">RSGB 2nd 70MHz Contest</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2015/09/two-years-in-the-making-70mhz-300w-amplifier/">Two years in the making – 70MHz 300w Amplifier</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2015/09/5th-144mhz-backpackers-contest/">5th 144MHz Backpackers Contest</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2015/08/update-to-slim-jim-calculator/">Update to Slim Jim calculator</a>
+									</li>
+											<li>
+					<a href="https://m0ukd.com/2015/08/working-happisburgh-lighthouse-on-70mhz/">Working Happisburgh Lighthouse on 70MHz</a>
+									</li>
+					</ul>
+
+		</section><section id="recent-comments-2" class="widget-sidebar frontier-widget widget_recent_comments"><h2 class="widget-title">Recent Comments</h2><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">John M0UKD</span> on <a href="https://m0ukd.com/homebrew/baluns-and-ununs/91-magnetic-longwire-balun-unun/comment-page-2/#comment-6122">9:1 Magnetic Longwire Balun / Unun</a></li><li class="recentcomments"><span class="comment-author-link">John M0UKD</span> on <a href="https://m0ukd.com/homebrew/antennas/144mhz-2m-portable-yagi-vhf-beam-antenna/comment-page-2/#comment-6121">144MHz 2m Portable Yagi VHF Beam Antenna</a></li><li class="recentcomments"><span class="comment-author-link">John M0UKD</span> on <a href="https://m0ukd.com/calculators/resonant-frequency-calculator-inductance-capacitance-lc-circuit/comment-page-1/#comment-6120">Resonant Frequency Calculator – Inductance Capacitance LC circuit</a></li><li class="recentcomments"><span class="comment-author-link">John M0UKD</span> on <a href="https://m0ukd.com/calculators/slim-jim-and-j-pole-calculator/comment-page-3/#comment-6119">Slim Jim and J Pole calculator</a></li><li class="recentcomments"><span class="comment-author-link">John M0UKD</span> on <a href="https://m0ukd.com/calculators/loaded-quarter-wave-antenna-inductance-calculator/comment-page-1/#comment-6118">Loaded Quarter Wave Antenna Inductance Calculator</a></li></ul></section><section id="baw_widgetarchives_widget_my_archives-2" class="widget-sidebar frontier-widget baw_widgetarchives_widget_class"><h2 class="widget-title">Archives</h2><ul>					<li class="baw-year">
+					<a href="https://m0ukd.com/2017/">2017</a>
+					<ul class="baw-months" style="display: none;">
+									<li class="baw-month">
+					<a href="https://m0ukd.com/2017/08/">August 2017</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2017/07/">July 2017</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2017/06/">June 2017</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2017/03/">March 2017</a>
+				</li>
+				</ul></li>					<li class="baw-year">
+					<a href="https://m0ukd.com/2016/">2016</a>
+					<ul class="baw-months" style="display: none;">
+									<li class="baw-month">
+					<a href="https://m0ukd.com/2016/03/">March 2016</a>
+				</li>
+				</ul></li>					<li class="baw-year">
+					<a href="https://m0ukd.com/2015/">2015</a>
+					<ul class="baw-months" style="display: none;">
+									<li class="baw-month">
+					<a href="https://m0ukd.com/2015/11/">November 2015</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2015/10/">October 2015</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2015/09/">September 2015</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2015/08/">August 2015</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2015/06/">June 2015</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2015/05/">May 2015</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2015/04/">April 2015</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2015/02/">February 2015</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2015/01/">January 2015</a>
+				</li>
+				</ul></li>					<li class="baw-year">
+					<a href="https://m0ukd.com/2014/">2014</a>
+					<ul class="baw-months" style="display: none;">
+									<li class="baw-month">
+					<a href="https://m0ukd.com/2014/11/">November 2014</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2014/10/">October 2014</a>
+				</li>
+								<li class="baw-month">
+					<a href="https://m0ukd.com/2014/09/">September 2014</a>
+				</li>
+				</ul></li>					<li class="baw-year">
+					<a href="https://m0ukd.com/2013/">2013</a>
+					<ul class="baw-months" style="display: none;">
+									<li class="baw-month">
+					<a href="https://m0ukd.com/2013/03/">March 2013</a>
+				</li>
+				</ul></li>					<li class="baw-year">
+					<a href="https://m0ukd.com/2009/">2009</a>
+					<ul class="baw-months" style="display: none;">
+									<li class="baw-month">
+					<a href="https://m0ukd.com/2009/07/">July 2009</a>
+				</li>
+				</ul></li>					<li class="baw-year">
+					<a href="https://m0ukd.com/2008/">2008</a>
+					<ul class="baw-months" style="display: none;">
+									<li class="baw-month">
+					<a href="https://m0ukd.com/2008/10/">October 2008</a>
+				</li>
+						</ul></li>
+		</ul></section><section id="nav_menu-2" class="widget-sidebar frontier-widget widget_nav_menu"><h2 class="widget-title">Site Map</h2><div class="menu-main-container"><ul id="menu-main-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-445"><a href="https://m0ukd.com/">Home</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1060"><a href="https://m0ukd.com/category/portable/">Portable Operating</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1061"><a href="https://m0ukd.com/category/contests/">Contests</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1062"><a href="https://m0ukd.com/category/technical/">Technical</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1063"><a href="https://m0ukd.com/category/construction/">Construction</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1064"><a href="https://m0ukd.com/category/satellite-operations/">Satellite Operations</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1065"><a href="https://m0ukd.com/category/special-events/">Special Events</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="https://m0ukd.com/about-me/">About Me</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current_page_ancestor menu-item-has-children menu-item-25"><a href="https://m0ukd.com/homebrew/">Homebrew</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-732"><a href="https://m0ukd.com/homebrew/antennas/">Antennas</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1287 current_page_item menu-item-1289"><a href="https://m0ukd.com/homebrew/antennas/70mhz-quarter-wave-ground-plane-antenna/" aria-current="page">70MHz Quarter Wave Ground Plane Antenna</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-298"><a href="https://m0ukd.com/homebrew/antennas/144mhz-2m-portable-yagi-vhf-beam-antenna/">144MHz 2m Portable Yagi VHF Beam Antenna</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="https://m0ukd.com/homebrew/antennas/magnetic-loop-antennas/">Magnetic Loop Antennas</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-275"><a href="https://m0ukd.com/homebrew/antennas/homemade-carolina-windom-antenna/">Homemade Carolina Windom antenna</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-286"><a href="https://m0ukd.com/homebrew/antennas/homemade-20-metre-band-loft-dipole/">Homemade 20 metre band loft dipole!</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-672"><a href="https://m0ukd.com/homebrew/baluns-and-ununs/">Baluns and UnUns</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292"><a href="https://m0ukd.com/homebrew/baluns-and-ununs/end-fed-half-wave-antenna-tuned-coupler-efhw/">End Fed Half Wave Antenna Coupler (EFHW)</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-295"><a href="https://m0ukd.com/homebrew/baluns-and-ununs/11-voltage-balun-for-hf-wire-dipoles/">1:1 Voltage Balun for HF wire dipoles</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-677"><a href="https://m0ukd.com/homebrew/baluns-and-ununs/91-magnetic-longwire-balun-unun/">9:1 Magnetic Longwire Balun / Unun</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="https://m0ukd.com/homebrew/simple-cw-touch-keyer-circuits/">Simple CW Touch Keyer Circuits</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307"><a href="https://m0ukd.com/homebrew/capacitive-cw-touch-key-circuits/">Capacitive CW Touch Key Circuits</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-279"><a href="https://m0ukd.com/homebrew/2n6084-144mhz-fm-power-amplifier/">2N6084 144MHz FM Power Amplifier</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="https://m0ukd.com/homebrew/g3xbm-472khz-transverter/">G3XBM 472kHz Transverter</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-289"><a href="https://m0ukd.com/homebrew/rig-to-soundcard-interface/">Rig to Soundcard Interface</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="https://m0ukd.com/homebrew/pic-controlled-500w-modified-sine-wave-inverter/">PIC controlled 500w ‘Modified Sine Wave’ Inverter</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-457"><a href="https://m0ukd.com/homebrew/alkaline-battery-charging-circuit/">Alkaline battery charging circuit</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-83"><a href="https://m0ukd.com/calculators/">Calculators</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="https://m0ukd.com/calculators/slim-jim-and-j-pole-calculator/">Slim Jim and J Pole calculator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1193"><a href="https://m0ukd.com/calculators/quarter-wave-ground-plane-antenna-calculator/">1/4 Wave Ground Plane Antenna Calculator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="https://m0ukd.com/calculators/ohms-law-calculator/">Ohms Law Calculator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-254"><a href="https://m0ukd.com/calculators/dbm-dbw-uw-mw-watt-kw-mw-calculator/">dBm, dBW, µW, mW, Watt, KW and MW Calculator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-319"><a href="https://m0ukd.com/calculators/loaded-quarter-wave-antenna-inductance-calculator/">Loaded Quarter Wave Antenna Inductance Calculator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="https://m0ukd.com/calculators/erp-eirp-calculator/">ERP &amp; EIRP Calculator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="https://m0ukd.com/calculators/resonant-frequency-calculator-inductance-capacitance-lc-circuit/">Resonant Frequency Calculator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-156"><a href="https://m0ukd.com/calculators/pi-attenuator-calculator/">PI attenuator calculator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://m0ukd.com/calculators/t-attenuator-calculator/">T attenuator calculator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="https://m0ukd.com/calculators/air-cored-inductor-calculator/">Air Cored Inductor Calculator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-204"><a href="https://m0ukd.com/calculators/inverted-vee-antenna/">Inverted Vee Antenna</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223"><a href="https://m0ukd.com/calculators/parallel-resistor-inductor-or-series-capacitor-calculator/">Parallel Resistor, Inductor or series capacitor calculator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="https://m0ukd.com/calculators/electricity-cost-calculator-kwh/">Electricity cost calculator kW/h</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-46"><a href="https://m0ukd.com/mods/">Mods</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-441"><a href="https://m0ukd.com/mods/yaesu-mh-31-electret-condenser-mic-modification/">Yaesu MH-31 Electret Condenser Mic Modification</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442"><a href="https://m0ukd.com/mods/mfj-971-portable-antenna-tuner-modifications/">MFJ-971 Portable Antenna Tuner Modifications</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1145"><a href="https://m0ukd.com/mods/icom-ic-7200-so239-to-ntype-socket/">Icom IC-7200 SO-239 to N-Type Socket</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1093"><a href="https://m0ukd.com/reviews/">Reviews</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1094"><a href="https://m0ukd.com/reviews/manson-sps-9400-40a-switchmode-power-supply/">Manson SPS-9400 40A 3-15V Switchmode Power Supply</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-490"><a href="https://m0ukd.com/other-stuff/">Other Stuff</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-491"><a href="https://m0ukd.com/other-stuff/printable-amateur-radio-logbooks/">Printable Amateur Radio Logbooks</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-502"><a href="https://m0ukd.com/other-stuff/useful-information-on-lead-acid-batteries/">Useful information on Lead Acid Batteries</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-983"><a href="https://m0ukd.com/other-stuff/web-server-network-usage/">Web Server Network Usage</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-996"><a href="https://server.john-p.net/phpsysinfo/">Server Info</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-405"><a href="https://m0ukd.com/logbook/">My Logbook</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-401"><a href="https://m0ukd.com/contact-me/">Contact Me</a></li>
+</ul></div></section>		
+	</aside>
+	</div><div id="sidebar-right" class="sidebar cf" itemscope="" itemtype="http://schema.org/WPSideBar" role="complementary" aria-label="Sidebar Right">
+		<aside id="widgets-wrap-sidebar-right">
+
+					<section id="search-3" class="widget-sidebar frontier-widget widget_search"><form role="search" method="get" class="search-form" action="https://m0ukd.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form></section><section id="text-4" class="widget-sidebar frontier-widget widget_text">			<div class="textwidget"><div class="fb-like" data-href="https://m0ukd.com" data-width="245" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></div>
+		</section><section id="text-3" class="widget-sidebar frontier-widget widget_text">			<div class="textwidget"><script async="" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/f.txt"></script>
+<!-- Auto White 12/2016 -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9088453687454522" data-ad-slot="1994989496" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</section><section id="text-2" class="widget-sidebar frontier-widget widget_text">			<div class="textwidget">            <div class="twitter-timeline twitter-timeline-rendered" style="display: flex; width: 520px; max-width: 100%; margin-top: 0px; margin-bottom: 0px;"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 247px; height: 600px; display: block; flex-grow: 1;" title="Twitter Timeline" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/M0UKD.html"></iframe></div>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+		</section><section id="iclw-2" class="widget-sidebar frontier-widget widget_iclw"><h2 class="widget-title">Links</h2><ul><li><a target="_blank" href="https://www.youtube.com/user/sparkie21/videos">My YouTube Channel</a></li><li><a target="_blank" href="https://www.flickr.com/photos/m0ukd/">My Flickr Photostream</a></li><li><a target="_blank" href="http://j0hn.uk/">My Raspberry Pi Home Server!</a></li><li><a target="_blank" href="https://john-p.net/phpsysinfo">Web Server System Info</a></li><li><a target="_blank" href="http://www.swpc.noaa.gov/products/solar-cycle-progression">Solar Cycle Progression</a></li><li><a href="https://m0ukd.com/static/pixel/">Video Pixel Offset Calculator</a></li></ul></section><section id="tag_cloud-3" class="widget-sidebar frontier-widget widget_tag_cloud"><h2 class="widget-title">Common Tags</h2><div class="tagcloud"><a href="https://m0ukd.com/tag/14-wave/" class="tag-cloud-link tag-link-100 tag-link-position-1" style="font-size: 8pt;" aria-label="1/4 Wave (1 item)">1/4 Wave</a>
+<a href="https://m0ukd.com/tag/2m/" class="tag-cloud-link tag-link-76 tag-link-position-2" style="font-size: 8pt;" aria-label="2m (1 item)">2m</a>
+<a href="https://m0ukd.com/tag/4m/" class="tag-cloud-link tag-link-23 tag-link-position-3" style="font-size: 20.923076923077pt;" aria-label="4m (7 items)">4m</a>
+<a href="https://m0ukd.com/tag/10m/" class="tag-cloud-link tag-link-48 tag-link-position-4" style="font-size: 11.876923076923pt;" aria-label="10m (2 items)">10m</a>
+<a href="https://m0ukd.com/tag/15m/" class="tag-cloud-link tag-link-63 tag-link-position-5" style="font-size: 11.876923076923pt;" aria-label="15m (2 items)">15m</a>
+<a href="https://m0ukd.com/tag/21mhz/" class="tag-cloud-link tag-link-64 tag-link-position-6" style="font-size: 11.876923076923pt;" aria-label="21MHz (2 items)">21MHz</a>
+<a href="https://m0ukd.com/tag/28mhz/" class="tag-cloud-link tag-link-49 tag-link-position-7" style="font-size: 11.876923076923pt;" aria-label="28MHz (2 items)">28MHz</a>
+<a href="https://m0ukd.com/tag/70mhz/" class="tag-cloud-link tag-link-22 tag-link-position-8" style="font-size: 20.923076923077pt;" aria-label="70MHz (7 items)">70MHz</a>
+<a href="https://m0ukd.com/tag/144mhz/" class="tag-cloud-link tag-link-75 tag-link-position-9" style="font-size: 8pt;" aria-label="144MHz (1 item)">144MHz</a>
+<a href="https://m0ukd.com/tag/160m/" class="tag-cloud-link tag-link-46 tag-link-position-10" style="font-size: 11.876923076923pt;" aria-label="160m (2 items)">160m</a>
+<a href="https://m0ukd.com/tag/amplifier/" class="tag-cloud-link tag-link-78 tag-link-position-11" style="font-size: 8pt;" aria-label="Amplifier (1 item)">Amplifier</a>
+<a href="https://m0ukd.com/tag/amsat/" class="tag-cloud-link tag-link-31 tag-link-position-12" style="font-size: 11.876923076923pt;" aria-label="Amsat (2 items)">Amsat</a>
+<a href="https://m0ukd.com/tag/antenna/" class="tag-cloud-link tag-link-68 tag-link-position-13" style="font-size: 14.461538461538pt;" aria-label="Antenna (3 items)">Antenna</a>
+<a href="https://m0ukd.com/tag/anytone/" class="tag-cloud-link tag-link-69 tag-link-position-14" style="font-size: 8pt;" aria-label="Anytone (1 item)">Anytone</a>
+<a href="https://m0ukd.com/tag/at-588/" class="tag-cloud-link tag-link-70 tag-link-position-15" style="font-size: 8pt;" aria-label="AT-588 (1 item)">AT-588</a>
+<a href="https://m0ukd.com/tag/backpackers/" class="tag-cloud-link tag-link-74 tag-link-position-16" style="font-size: 8pt;" aria-label="Backpackers (1 item)">Backpackers</a>
+<a href="https://m0ukd.com/tag/blf-278/" class="tag-cloud-link tag-link-80 tag-link-position-17" style="font-size: 8pt;" aria-label="BLF 278 (1 item)">BLF 278</a>
+<a href="https://m0ukd.com/tag/calculator/" class="tag-cloud-link tag-link-101 tag-link-position-18" style="font-size: 8pt;" aria-label="Calculator (1 item)">Calculator</a>
+<a href="https://m0ukd.com/tag/construction/" class="tag-cloud-link tag-link-26 tag-link-position-19" style="font-size: 11.876923076923pt;" aria-label="Construction (2 items)">Construction</a>
+<a href="https://m0ukd.com/tag/contest/" class="tag-cloud-link tag-link-41 tag-link-position-20" style="font-size: 20.923076923077pt;" aria-label="Contest (7 items)">Contest</a>
+<a href="https://m0ukd.com/tag/coupler/" class="tag-cloud-link tag-link-19 tag-link-position-21" style="font-size: 11.876923076923pt;" aria-label="Coupler (2 items)">Coupler</a>
+<a href="https://m0ukd.com/tag/dk7zb/" class="tag-cloud-link tag-link-66 tag-link-position-22" style="font-size: 11.876923076923pt;" aria-label="DK7ZB (2 items)">DK7ZB</a>
+<a href="https://m0ukd.com/tag/dungeness/" class="tag-cloud-link tag-link-28 tag-link-position-23" style="font-size: 11.876923076923pt;" aria-label="Dungeness (2 items)">Dungeness</a>
+<a href="https://m0ukd.com/tag/end-fed/" class="tag-cloud-link tag-link-16 tag-link-position-24" style="font-size: 16.615384615385pt;" aria-label="End Fed (4 items)">End Fed</a>
+<a href="https://m0ukd.com/tag/fm/" class="tag-cloud-link tag-link-71 tag-link-position-25" style="font-size: 8pt;" aria-label="FM (1 item)">FM</a>
+<a href="https://m0ukd.com/tag/ft-897d/" class="tag-cloud-link tag-link-8 tag-link-position-26" style="font-size: 11.876923076923pt;" aria-label="FT-897D (2 items)">FT-897D</a>
+<a href="https://m0ukd.com/tag/half-wave/" class="tag-cloud-link tag-link-17 tag-link-position-27" style="font-size: 16.615384615385pt;" aria-label="Half Wave (4 items)">Half Wave</a>
+<a href="https://m0ukd.com/tag/ic-7200/" class="tag-cloud-link tag-link-9 tag-link-position-28" style="font-size: 19.846153846154pt;" aria-label="IC-7200 (6 items)">IC-7200</a>
+<a href="https://m0ukd.com/tag/id-51/" class="tag-cloud-link tag-link-99 tag-link-position-29" style="font-size: 8pt;" aria-label="ID-51 (1 item)">ID-51</a>
+<a href="https://m0ukd.com/tag/international-space-station/" class="tag-cloud-link tag-link-104 tag-link-position-30" style="font-size: 11.876923076923pt;" aria-label="International Space Station (2 items)">International Space Station</a>
+<a href="https://m0ukd.com/tag/inverted-v/" class="tag-cloud-link tag-link-29 tag-link-position-31" style="font-size: 11.876923076923pt;" aria-label="Inverted V (2 items)">Inverted V</a>
+<a href="https://m0ukd.com/tag/iss/" class="tag-cloud-link tag-link-3 tag-link-position-32" style="font-size: 14.461538461538pt;" aria-label="ISS (3 items)">ISS</a>
+<a href="https://m0ukd.com/tag/j-pole/" class="tag-cloud-link tag-link-73 tag-link-position-33" style="font-size: 8pt;" aria-label="J Pole (1 item)">J Pole</a>
+<a href="https://m0ukd.com/tag/linear/" class="tag-cloud-link tag-link-79 tag-link-position-34" style="font-size: 8pt;" aria-label="Linear (1 item)">Linear</a>
+<a href="https://m0ukd.com/tag/monoband/" class="tag-cloud-link tag-link-67 tag-link-position-35" style="font-size: 8pt;" aria-label="Monoband (1 item)">Monoband</a>
+<a href="https://m0ukd.com/tag/mosfet/" class="tag-cloud-link tag-link-77 tag-link-position-36" style="font-size: 8pt;" aria-label="MOSFET (1 item)">MOSFET</a>
+<a href="https://m0ukd.com/tag/portable/" class="tag-cloud-link tag-link-12 tag-link-position-37" style="font-size: 22pt;" aria-label="Portable (8 items)">Portable</a>
+<a href="https://m0ukd.com/tag/quarter-wave/" class="tag-cloud-link tag-link-47 tag-link-position-38" style="font-size: 14.461538461538pt;" aria-label="quarter wave (3 items)">quarter wave</a>
+<a href="https://m0ukd.com/tag/secret-nuclear-bunker/" class="tag-cloud-link tag-link-62 tag-link-position-39" style="font-size: 11.876923076923pt;" aria-label="Secret Nuclear Bunker (2 items)">Secret Nuclear Bunker</a>
+<a href="https://m0ukd.com/tag/slim-jim/" class="tag-cloud-link tag-link-72 tag-link-position-40" style="font-size: 11.876923076923pt;" aria-label="Slim Jim (2 items)">Slim Jim</a>
+<a href="https://m0ukd.com/tag/space-station/" class="tag-cloud-link tag-link-4 tag-link-position-41" style="font-size: 14.461538461538pt;" aria-label="Space Station (3 items)">Space Station</a>
+<a href="https://m0ukd.com/tag/sstv/" class="tag-cloud-link tag-link-32 tag-link-position-42" style="font-size: 11.876923076923pt;" aria-label="SSTV (2 items)">SSTV</a>
+<a href="https://m0ukd.com/tag/topband/" class="tag-cloud-link tag-link-45 tag-link-position-43" style="font-size: 11.876923076923pt;" aria-label="topband (2 items)">topband</a>
+<a href="https://m0ukd.com/tag/video/" class="tag-cloud-link tag-link-44 tag-link-position-44" style="font-size: 11.876923076923pt;" aria-label="Video (2 items)">Video</a>
+<a href="https://m0ukd.com/tag/yagi/" class="tag-cloud-link tag-link-65 tag-link-position-45" style="font-size: 11.876923076923pt;" aria-label="Yagi (2 items)">Yagi</a></div>
+</section><section id="calendar-2" class="widget-sidebar frontier-widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar" class="wp-calendar-table">
+	<caption>September 2022</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td colspan="3" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td>
+	</tr>
+	<tr>
+		<td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+	</tr>
+	<tr>
+		<td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td id="today">17</td><td>18</td>
+	</tr>
+	<tr>
+		<td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+	</tr>
+	<tr>
+		<td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+		<td class="pad" colspan="2">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table><nav aria-label="Previous and next months" class="wp-calendar-nav">
+		<span class="wp-calendar-nav-prev"><a href="https://m0ukd.com/2017/08/">« Aug</a></span>
+		<span class="pad">&nbsp;</span>
+		<span class="wp-calendar-nav-next">&nbsp;</span>
+	</nav></div></section>		
+	</aside>
+	</div></div>
+
+
+<div id="bottom-bar" class="cf" role="contentinfo">
+	
+			<span id="bottom-bar-text">M0UKD Amateur Radio Station Information Page © 2007-2017.</span>
+	
+	
+	</div>
+
+</div>
+
+
+
+
+
+<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: inherit; bottom: 0px; position: fixed; display: block;"><span>This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.<a role="button" data-cli_action="accept" id="cookie_action_close_header" class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button wt-cli-accept-btn" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">Accept</a> <a href="https://m0ukd.com/" id="CONSTANT_OPEN_URL" target="_blank" class="cli-plugin-main-link" style="color: rgb(68, 68, 68);">Read More</a></span></div><div id="cookie-law-info-again" data-nosnippet="true" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); position: fixed; font-family: inherit; width: auto; bottom: 0px; right: 100px; display: none;"><span id="cookie_hdr_showagain">Privacy &amp; Cookies Policy</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+	<div class="cli-modal-content cli-bar-popup">
+		  <button type="button" class="cli-modal-close" id="cliModalClose">
+			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<span class="wt-cli-sr-only">Close</span>
+		  </button>
+		  <div class="cli-modal-body">
+			<div class="cli-container-fluid cli-tab-container">
+	<div class="cli-row">
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+			<div class="cli-privacy-overview">
+				<h4>Privacy Overview</h4>				<div class="cli-privacy-content">
+					<div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the ...</div>
+				</div>
+				<a class="cli-privacy-readmore" aria-label="Show more" role="button" data-readmore-text="Show more" data-readless-text="Show less"></a>			</div>
+		</div>
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+												<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+								Necessary							</a>
+															<div class="wt-cli-necessary-checkbox">
+									<input type="checkbox" class="cli-user-preference-checkbox" id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked">
+									<label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
+								</div>
+								<span class="cli-necessary-caption">Always Enabled</span>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="necessary">
+								<div class="wt-cli-cookie-description">
+									Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information.								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="non-necessary" data-toggle="cli-toggle-tab">
+								Non-necessary							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-non-necessary" class="cli-user-preference-checkbox" data-id="checkbox-non-necessary" checked="checked">
+									<label for="wt-cli-checkbox-non-necessary" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Non-necessary</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="non-necessary">
+								<div class="wt-cli-cookie-description">
+									Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website.								</div>
+							</div>
+						</div>
+					</div>
+										</div>
+	</div>
+</div>
+		  </div>
+		  <div class="cli-modal-footer">
+			<div class="wt-cli-element cli-container-fluid cli-tab-container">
+				<div class="cli-row">
+					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+						
+															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SAVE &amp; ACCEPT</a>
+													</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all-->		<!-- Start of StatCounter Code -->
+		<script>
+			<!--
+			var sc_project=4892131;
+			var sc_security="45689c29";
+						var scJsHost = (("https:" == document.location.protocol) ?
+				"https://secure." : "http://www.");
+			//-->
+			
+document.write("<sc"+"ript src='" +scJsHost +"statcounter.com/counter/counter.js'></"+"script>");		</script><script src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/counter.js.download"></script><span class="statcounter"><a id="sc_counter_4892131" class="statcounter" href="https://www.statcounter.com/" target="_blank"><img src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/t.php" alt="StatCounter - Free Web Tracker and Counter" border="0" undefined=""></a></span>
+				<noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/"><img class="statcounter" src="https://c.statcounter.com/4892131/0/45689c29/0/" alt="web analytics" /></a></div></noscript>
+		<!-- End of StatCounter Code -->
+		<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$( '.menu-item-has-children' ).click(function(){
+		$( '.nav-main > .menu-item-has-children' ).not(this).removeClass( 'toggle-on' );
+		$(this).not().parents().removeClass( 'toggle-on' );
+		$(this).toggleClass( 'toggle-on' );
+	});
+});
+</script>
+<link rel="stylesheet" id="simple-share-buttons-adder-ssba-css" href="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/ssba.css" type="text/css" media="all">
+<style id="simple-share-buttons-adder-ssba-inline-css" type="text/css">
+	.ssba {
+									
+									
+									
+									
+								}
+								.ssba img
+								{
+									width: 35px !important;
+									padding: 6px;
+									border:  0;
+									box-shadow: none !important;
+									display: inline !important;
+									vertical-align: middle;
+									box-sizing: unset;
+								}
+
+								.ssba-classic-2 .ssbp-text {
+									display: none!important;
+								}
+
+								.ssba .fb-save
+								{
+								padding: 6px;
+								line-height: 30px; }
+								.ssba, .ssba a
+								{
+									text-decoration:none;
+									background: none;
+									font-family: Indie Flower;
+									font-size: 20px;
+									
+									
+								}
+								 .ssba_sharecount:after, .ssba_sharecount:before {
+									right: 100%;
+									border: solid transparent;
+									content: " ";
+									height: 0;
+									width: 0;
+									position: absolute;
+									pointer-events: none;
+								}
+								.ssba_sharecount:after {
+									border-color: rgba(224, 221, 221, 0);
+									border-right-color: #f5f5f5;
+									border-width: 5px;
+									top: 50%;
+									margin-top: -5px;
+								}
+								.ssba_sharecount:before {
+									border-color: rgba(85, 94, 88, 0);
+									border-right-color: #e0dddd;
+									border-width: 6px;
+									top: 50%;
+									margin-top: -6px;
+								}
+								.ssba_sharecount {
+									font: 11px Arial, Helvetica, sans-serif;
+
+									padding: 5px;
+									-khtml-border-radius: 6px;
+									-o-border-radius: 6px;
+									-webkit-border-radius: 6px;
+									-moz-border-radius: 6px;
+									border-radius: 6px;
+									position: relative;
+									border: 1px solid #e0dddd;color: #555e58;
+										background: #f5f5f5;
+									}
+									.ssba_sharecount:after {
+										border-right-color: #f5f5f5;
+									}
+
+			   #ssba-bar-2 .ssbp-bar-list {
+					max-width: 48px !important;;
+			   }
+			   #ssba-bar-2 .ssbp-bar-list li a {height: 48px !important; width: 48px !important; 
+				}
+				#ssba-bar-2 .ssbp-bar-list li a:hover {
+				}
+
+				#ssba-bar-2 .ssbp-bar-list li a::before {line-height: 48px !important;; font-size: 18px;}
+				#ssba-bar-2 .ssbp-bar-list li a:hover::before {}
+				#ssba-bar-2 .ssbp-bar-list li {
+				margin: 0px 0!important;
+				}@media only screen and ( max-width: 750px ) {
+				#ssba-bar-2 {
+				display: block;
+				}
+			}
+@font-face {
+				font-family: 'ssbp';
+				src:url('https://m0ukd.com/wp-content/plugins/simple-share-buttons-adder/fonts/ssbp.eot?xj3ol1');
+				src:url('https://m0ukd.com/wp-content/plugins/simple-share-buttons-adder/fonts/ssbp.eot?#iefixxj3ol1') format('embedded-opentype'),
+					url('https://m0ukd.com/wp-content/plugins/simple-share-buttons-adder/fonts/ssbp.woff?xj3ol1') format('woff'),
+					url('https://m0ukd.com/wp-content/plugins/simple-share-buttons-adder/fonts/ssbp.ttf?xj3ol1') format('truetype'),
+					url('https://m0ukd.com/wp-content/plugins/simple-share-buttons-adder/fonts/ssbp.svg?xj3ol1#ssbp') format('svg');
+				font-weight: normal;
+				font-style: normal;
+
+				/* Better Font Rendering =========== */
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+</style>
+<script type="text/javascript" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/baw-script.min.js.download" id="baw-script-js"></script>
+<script type="text/javascript" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/regenerator-runtime.min.js.download" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/wp-polyfill.min.js.download" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/m0ukd.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/index.js.download" id="contact-form-7-js"></script>
+<script type="text/javascript" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/ssba.js.download" id="simple-share-buttons-adder-ssba-js"></script>
+<script type="text/javascript" id="simple-share-buttons-adder-ssba-js-after">
+Main.boot( [] );
+</script>
+
+<div id="scroll_to_top"><a href="https://m0ukd.com/homebrew/antennas/70mhz-quarter-wave-ground-plane-antenna/#top" style="z-index: 9; position: fixed; top: 100%; width: 110px; margin-top: -30px; right: 50%; margin-left: -50px; height: 20px; padding: 3px; font-size: 14px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(34, 34, 34); border-radius: 5px; opacity: 0.8; text-decoration: none; display: none;">Scroll to Top</a></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/widget_iframe.c4bdc17e77719578b594d5555bee90db.html" title="Twitter settings iframe" style="display: none;"></iframe><div id="overlay_kbfmlhifgfjlfibpdoeinoekkabeafeg" style="position: fixed; 
+                  width: 100%; 
+                  height: 100%; 
+                  top: 0;
+                  display: none;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  background-color: rgba(0,0,0,0.5); 
+                  z-index: 9999999; 
+                  cursor: pointer; " onclick="this.style.display=&#39;none&#39;"></div><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./70MHz Quarter Wave Ground Plane Antenna – M0UKD – Amateur Radio Blog_files/saved_resource.html"></iframe></body></html>
